@@ -1,0 +1,43 @@
+<!-- 
+  Lesson 1B - Adding Script to a HTML File (09/16/2025)
+
+  ===============================================
+  HOW TO IMPORT A JAVASCRIPT FILE INTO HTML
+  ===============================================
+
+  To use JavaScript in an HTML page, you can link an external .js file using the <script> tag with the 'src' (source) attribute.
+
+  Syntax: <script src="yourfile.js"></script>
+
+  The <script> tag is usually placed before the closing </body> tag, but it can also be placed in the <head> if necessary.
+  If placed in the <head>, the script will run before the page content is loaded, which might cause issues if your script depends on HTML elements.
+  To avoid that, you can use the 'defer' or 'async' attributes if needed.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 1B - Script Example</title>
+</head>
+<body>
+  <h1>Test</h1>
+  <!-- Page content goes here -->
+
+  <!-- Linking external JavaScript file at the end of body for safer loading -->
+  <script src="./A_javascript-and-node.js"></script>
+</body>
+</html>
+
+<!-- 
+  In the example above:
+  - "A. javascript-and-node.js" is the external JavaScript file located in the same folder as the HTML file.
+  - The script will run as the browser parses the <head>.
+  - If "A_javascript-and-node.js" includes code that interacts with elements in the body, it’s better to place it at the end of the body like this:
+
+    <body>
+      (HTML content here)
+      <script src="A. javascript-and-node.js"></script>
+    </body>
+-->

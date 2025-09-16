@@ -61,6 +61,10 @@ const BirthYear = 2006; // Const declaration
 // - Cannot start with a digit.
 // - Is case sensitive, e.g., Estado_origem is different from estado_origem.
 
+// Valid examples:
+let Employee_Name;
+let _Sallary;
+let $City;
 
 // ==============================
 //  Scope 
